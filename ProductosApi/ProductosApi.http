@@ -1,0 +1,44 @@
+@ProductosApi_HostAddress = http://localhost:5239
+
+GET {{ProductosApi_HostAddress}}/productos
+Accept: application/json
+
+###
+
+GET {{ProductosApi_HostAddress}}/productos/1
+Accept: application/json
+
+###
+
+GET {{ProductosApi_HostAddress}}/productos/buscar?termino=cafe
+Accept: application/json
+
+###
+
+POST {{ProductosApi_HostAddress}}/productos
+Content-Type: application/json
+
+{
+  "nombre": "Galletas",
+  "descripcion": "Paquete de galletas de avena",
+  "precio": 25.50,
+  "stock": 40
+}
+
+###
+
+PUT {{ProductosApi_HostAddress}}/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Galletas",
+  "descripcion": "Paquete de galletas de avena y pasas",
+  "precio": 27.00,
+  "stock": 35
+}
+
+###
+
+DELETE {{ProductosApi_HostAddress}}/productos/1
+
+###

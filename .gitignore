@@ -1,0 +1,22 @@
+# Compilacion
+bin/
+obj/
+
+# Variables de entorno (contienen la contraseña de la base de datos)
+.env
+!.env.example
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Publicacion y logs
+publish/
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
